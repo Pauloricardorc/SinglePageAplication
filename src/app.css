@@ -5,3 +5,43 @@
   height: 100%;
   background-color: #F0F0F0;
 }
+.select {
+  width: 100%;
+  height: 95vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.select-into {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.into-container { 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  max-width: 1220px;
+}
+.into-container img {
+  width: 600px;
+  border-radius: 6px;
+}
+
+.into-container .into-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.into-container .into-content span {
+  font-size: 2rem;
+}
+.into-container .into-content p {
+  font-size: 1.2rem;
+  color: '#AAAAAA';
+  line-height: 1.6rem;
+}

@@ -1,6 +1,7 @@
 .header-container {
   display: flex;
-  width: '100%';
+  position: absolute;
+  width: 100%;
   gap: 2rem;
   justify-content: center;
   align-items: center;
@@ -8,4 +9,31 @@
   background-color: #F2F2F2;
   font-weight: 400;
   color: #777777
+}
+
+.link {
+  cursor: pointer;
+  font-size: 20px;
+  transition: 0.2s linear;
+}
+
+.link:hover { 
+  filter: brightness(110%);
+}
+
+.action-top-scroll {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 42px;
+  height: 42px;
+  border: 0;
+  border-radius: 50%;
+  background-color: #222eee;
+  color: #FFF;
+  cursor: pointer;
+}
+
+.action-top-scroll:hover {
+  filter: brightness(90%)
 }

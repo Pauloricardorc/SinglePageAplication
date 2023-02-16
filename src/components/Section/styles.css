@@ -1,10 +1,7 @@
 .section {
+  display: flex;
   width: 100%;
   height: 100vh;
   background-color: #DDD;
 }
 
-.section .info {
-  display: flex;
-  flex-direction: column;
-}

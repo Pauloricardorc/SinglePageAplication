@@ -1,21 +1,28 @@
-import { ReactNode } from "react";
+import { HTMLAttributes, ReactNode } from "react";
 import "./styles.css";
 
-type PropsSection = {
+interface PropsSection extends HTMLAttributes<HTMLDivElement> {
   id: string;
-  title: string;
-  description: string;
-  img: string;
-};
+  children: ReactNode;
+  color: string;
+  backgroundColor: string;
+}
 
-export function CustomSection(props: PropsSection) {
+export function CustomSection({
+  id,
+  children,
+  color,
+  backgroundColor,
+  ...props
+}: PropsSection) {
   return (
-    <div className="section" id={props.id}>
-      <img src={props.img} alt="" />
-      <div className="info">
-        <p>{props.title}</p>
-        <p>{props.description}</p>
-      </div>
+    <div
+      className="section"
+      id={id}
+      style={{ backgroundColor: backgroundColor, color: color }}
+      {...props}
+    >
+      {children}
     </div>
   );
 }
